@@ -55,4 +55,35 @@ Visit your page at: <https://YOUR_GITHUB_USERNAME.github.io/html-css-intro>
 ### Change the URL path of your website
 By renaming the repository or registering a unique domain name you can [publish the website at a custom URL](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
 
-###
+### Split the page into multiple files
+Splitting a growing code base into multiple smaller files is a great way to manage medium and larger sized projects.
+- **HTML:** Use the *anchor* tag to link from one page to another.
+  ```html
+  <a href="about.html">About Us</a>
+  ```
+- **CSS:** Use the `@import` at-rule to reference other files.
+  ```css
+  @import url('widgets.css')
+  ```
+
+### Add interactive behaviour to the page
+Using a programming language called JavaScript we can add rich functionality to the document, even turning it into a full fledged single page application.
+
+### Learn more with General Assembly
+Sign up for the [Programming for Non Programmers (PFNP)](https://generalassemb.ly/education/programming-for-non-programmers/singapore) course at General Assembly Singapore.
+
+### Ask me a question about this class
+Create, browse, or comment on the [GitHub issues for this repository](https://github.com/cbas/html-css-intro/issues).
+
+### Join our awesome local web developers community
+- Free and open meetups
+
+  https://webuild.sg/
+
+- Chat room
+
+  https://gitter.im/SingaporeJS/discussions
+
+- Communities
+
+  http://www.zell-weekeat.com/devfest/dist/community.html
