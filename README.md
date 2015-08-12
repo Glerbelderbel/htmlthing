@@ -34,16 +34,74 @@ The file `index.html` contains the page content in HTML format. Text, links, ima
 *Tip: Start by writing the content as plain text. You can even use [Markdown](https://help.github.com/articles/github-flavored-markdown/), just like this file.*
 
 ### Structuring the document
-Use semantic HTML tags to describe the content semantically.
+Use semantic HTML tags to describe the content semantically, that is, using tags that capture the meaning of the content.
 
 Semantic markup matter helps browsers and bots (i.e. search engines, social media) understand the site. It also makes it easier to style the page.
 
 Reference: https://developer.mozilla.org/en/docs/Web/HTML/Element
 
 ### Design and layout
-With CSS the content can be styled.
+With a CSS the page content can be styled. A stylesheet is a set of rules, which consist of a selector and a declaration of properties with values.
+
+```css
+h1 {
+  font-size: 36pt;
+  font-weight: bold;
+  color: purple;
+}
+```
+
+Use your browser's developer tools to inspect any website. This is a great way to learn how interesting effects can be achieved. Remember, great artists steal.
+
+![Inspect Element](https://i.imgur.com/nGLXgh0.png)
+
+#### Selectors
+Use selectors to precisely target the content that needs to be styled. The most specific selector overrides lesser ones.
+
+To keep your CSS code clean, try to avoid overly generic selectors that affect many elements.
+
+Use one or more classes or a single ID on elements to make them easier to target using CSS selectors.
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors
+
+```html
+<p>This should be blue.</p>
+<p class="sidenote">This should be red.<p>
+<p class="sidenote" id="summary">This should be green.</p>
+```
+
+```css
+p          { color: blue; }  /* applies to all p tags */
+p.sidenote { color: red; }   /* overrides the second and third */
+p#summary  { color: green; } /* overrides only the third */
+p:hover    { color: gold; }  /* overrides on mouse over */
+```
+
+#### Properties
+Control the visual design of elements using their many properties.
 
 Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+```css
+color
+background-image
+font-family
+width
+height
+padding
+margin
+...
+```
+
+#### Values
+Depending on the property, values can be specified in different units. E.g. lengths, time, angles, colours, strings, URLs, etc.
+
+```css
+12px
+500ms
+url('cat.jpg')
+...
+```
 
 ## Publish your website
 Commit & Push your changes to GitHub. Because they are on the `gh-pages` branch they will automatically be published on GitHub Pages.
@@ -65,6 +123,9 @@ Splitting a growing code base into multiple smaller files is a great way to mana
   ```css
   @import url('widgets.css')
   ```
+
+### Explore the Jekyll static site generator
+GitHub Pages has a powerful content management system (CMS) called [Jekyll](http://jekyllrb.com/). Use it to create more complex pages with auto-generated content, templates, themes, etc.
 
 ### Add interactive behaviour to the page
 Using a programming language called JavaScript we can add rich functionality to the document, even turning it into a full fledged single page application.
