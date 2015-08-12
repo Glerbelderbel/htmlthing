@@ -104,7 +104,9 @@ url('cat.jpg')
 ```
 
 ## Publish your website
-Commit & Push your changes to GitHub. Because they are on the `gh-pages` branch they will automatically be published on GitHub Pages.
+Commit & Sync your changes to GitHub. Because they are on the `gh-pages` branch they will automatically be published on GitHub Pages.
+
+![Sync button](https://i.imgur.com/xZS1Rcr.png)
 
 Visit your page at: <https://YOUR_GITHUB_USERNAME.github.io/html-css-intro>
 
