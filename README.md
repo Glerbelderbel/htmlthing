@@ -4,7 +4,7 @@ Let's build a website.
 ## Setting up tools
 - [GitHub](https://github.com/)
 
-  Create a free personal account and download the desktop app for your computer. ([Windows](https://windows.github.com/) or [Mac OS X](https://mac.github.com/))
+  Create a free personal account and download the [GitHub Desktop](https://desktop.github.com/) app for your computer.
 
 - [Atom](https://atom.io/)
 
